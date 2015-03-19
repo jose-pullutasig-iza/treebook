@@ -8,14 +8,13 @@
 
   <div class="status">
 
-        <br/>
-
+    <br/>
     <strong><%=key.name%></strong>
     <p><%=key.content%></p>
     <div class="meta"></div>
-    <%= link_to time_ago_in_words(key.created_at), key%> | 
+    <%= link_to time_ago_in_words(key.created_at), key%> 
     <span class="admin">
-      <%= link_to "Edit", edit_status_path(key) %> | 
+       | <%= link_to "Edit", edit_status_path(key) %> | 
       <%= link_to "Delete", key, method: :delete, data: {confirm: "Are you sure?"}%> 
     </span>
   </div>

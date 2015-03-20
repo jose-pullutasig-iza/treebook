@@ -9,7 +9,7 @@
   <div class="status">
 
     <br/>
-    <strong><%=key.name%></strong>
+    <strong><%= key.user.full_name %></strong>
     <p><%=key.content%></p>
     <div class="meta"></div>
     <%= link_to time_ago_in_words(key.created_at), key%> 
